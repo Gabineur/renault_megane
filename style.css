@@ -1,0 +1,574 @@
+html {font-size: 62.5%}
+body {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.45;
+}
+a {text-decoration: none}
+.page_content {
+    max-width:100%;
+    margin: 0px auto;
+    font-family: "Avenir";
+    font-weight:lighter;
+}
+
+header.MainHeader {
+    filter: drop-shadow(0px 0px 2px #e6e6ec);
+    background-color: black;
+    height:150px;
+}
+
+.MainHeader_top {
+    width: 100%;
+    background-color: black;
+    height: 29px;
+    display: flex
+}
+.MainHeader_top {justify-content:flex-end}
+.HeaderSite {display: flex}
+
+.MainHeader_top nav ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height:100%
+}
+.MainHeader_top nav li {
+    list-style-type: none;
+    float: left;
+    padding: 0px 7px;
+    height:100%
+}
+.MainHeader_top nav a {
+    display: flex;
+    height:100%;
+    align-items:center;
+}
+
+
+.title1 a, .title2 a, .title3 a {
+    color: white;
+    font-size: 1.3rem;
+}
+.HeaderSite ul a:hover {color:hsl(0deg 0% 100% / 80%)}
+
+.LogoRenault {
+    display: flex;
+    width: 132px;
+    float: right;
+    padding-left: 808px;
+}
+
+.MainHeader_bottom {
+    height: 88px;
+    display:flex;
+    margin-bottom: 31px;
+}
+
+.Mainmenu_visible, .searchRenault, .spaceMyRenault {
+    display: flex;
+    align-items:flex-end;
+}
+.home {margin-left:32px}
+.home img {
+    width: 64px;
+    height: 88px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.home img:hover {
+    width:44px;
+    height:68px;
+}
+.Mainmenu_visible {
+    width: 1250.77px
+}
+.Mainmenu_visible nav ul{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    height: 100%;
+}
+.Mainmenu_visible nav li {
+    list-style-type: none;
+    float: left;
+    height: 78px;
+    border-bottom: 3px solid transparent;
+}
+.Mainmenu_visible nav a {
+    display: flex;
+    font-family:"Avenir";
+    font-weight:900;
+    padding: 0px 8px;
+    color: white;
+    height: 100%;
+    font-size: 1.3rem;
+    align-items: center;
+}
+li.Véhicules {margin-left:32px}
+
+.Mainmenu_visible nav a:hover {color: hsl(0deg 0% 100% / 80%)}
+
+
+.voitureimg img, .bonhommeimg img, .localisationimg img {
+    height: 20px;
+    margin-top: 4px;
+}
+
+.spaceMyRenault {margin-right:24px}
+.Reprise {
+    display: flex;
+    flex-direction: column;
+    width: 39.73px;
+    padding: 16px 8px;
+    align-items: center;
+}
+.MyRenault {
+    display: flex;
+    flex-direction: column;
+    width: 62.33px;
+    padding: 16px 8px;
+    align-items: center;
+}
+.Noustrouver {
+    display: flex;
+    flex-direction: column;
+    width: 39.19px;
+    padding: 16px 8px;
+    align-items: center;
+}
+.text_reprisevehicule, .text_myrenault, .text_noustrouver {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: white;
+}
+
+.ZonePageHeader{margin-top:60px}
+.EnteteMegane4 {
+   width:1440px;
+   overflow:hidden;
+   height:600px;
+
+}
+.slides {
+    width: calc(1440px * 3);
+    animation: glisse 20s infinite;
+}
+.slide {
+    float:left;
+}
+@keyframes glisse {
+    0% {transform:translateX(0)}
+    10% {transform:translateX(0)}
+    20% {transform:translateX(0)}
+    33% {transform:translateX(-1440px)}
+    43% {transform:translateX(-1440px)}
+    53% {transform:translateX(-1440px)}
+    66% {transform:translateX(-2880px)}
+    76% {transform:translateX(-2880px)}
+    86% {transform:translateX(-2880px)}
+    100% {transform:translateX(0)}
+}
+
+header.titrepage {
+    background-color: hsla(0,0%,100%,.8);
+    margin:40px auto 0;
+    width: 60%;
+    height: 235px;
+}
+.animation_content {width:100%;height:100%}
+.title_animation a {
+    font-family: "Avenir";
+    font-weight:900;
+    font-size: 5rem;
+    color: #000
+}
+h1.titre_modelevehicule {margin:16px 0 40px}
+.titre_modelevehicule p {
+    display:flex;
+    justify-content:center;
+    margin:0px
+}
+.phraseaccueilpage {
+    display:flex;
+    color:#000;
+    font-size:2.4rem;
+    font-weight:normal;
+    justify-content:center;
+}
+a.brochure {display:flex;justify-content:center}
+.brochure button {
+    color:white;
+    background:#000;
+    padding:16px;
+    border:0;
+    font-size:1.6rem;
+    font-weight:900;
+    font-family: "Avenir";
+    transition:background-color 0.5s, color 0.5s;
+}
+.brochure button:hover {
+    background-color:#efdf00;
+    color:#000;
+    padding:16px;
+    cursor:pointer
+}
+
+.submenu {
+    position:absolute;
+    background-color:white;
+    top:150px;
+    width:100%;
+    height:59px;
+    z-index:4;
+    box-shadow: 0px 3px 10px grey;
+    animation: subapp 1s cubic-bezier(0.56, -0.07, 0, 1);
+}
+.submenu.-is-fixed {
+    z-index:9999;
+    position:fixed;
+    top:0;
+}
+.submenu_content {
+    width:100%;
+    height:100%;
+    display:flex;
+}
+.liste {
+    width:1122.34px;
+    background-color:white;
+    height:100%
+}
+.listenav {width:100%;height:100%;}
+.listeul {
+    margin:0px;
+    padding:0px;
+    overflow: hidden;
+    height:100%;
+    padding:0 16px;
+}
+.listeul li {
+    height:56px;
+    list-style-type:none;
+    float:left;
+    padding:0 8px;
+}
+.listeul li a {
+    height:100%;
+    display:flex;
+    text-decoration:none;
+    color:black;
+    border-bottom: 3px solid transparent;
+    align-items:center;
+    font-size:1.3rem;
+    transition: border-bottom-color .5s ease;
+}
+.listeul li a:hover {
+    border-bottom: 3px solid #efdf00;
+}
+.listeul li a:active {font-weight:bold;border-bottom: 3px solid #ffce33}
+li.hbblue a {color:rgb(0, 145, 218)}
+@keyframes subapp {
+    0% {transform:translateX(-1440px)}
+    100% {transform:translateX(0)}
+}
+
+.boutons {
+    display:flex;
+    height:43px;
+    font-size:1.6rem;
+    margin:8px;
+}
+
+.config {
+    width:136.25px;
+    height:43px;
+    background-color:#efdf00;
+}
+.config a {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#000;
+    font-weight:700;
+    padding:0 16px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.config a:hover {
+    color:white;
+    background-color:black;
+}
+
+.reservation {
+    width:163.41px;
+    margin-left:16px;
+    border:1px solid black;
+
+}
+.reservation a {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#000;
+    font-weight:700;
+    padding:0 16px;
+    transition:background-color 0.5s ease, color 0.5s ease;
+}
+.reservation a:hover {
+    color:white;
+    background-color:black;
+}
+
+.galerie {
+    padding-top:32px;
+    padding-bottom:32px;
+    display:flex;
+    width:100%;
+    height:816px
+}
+
+.design {
+    position:absolute;
+    left:632px;
+    height:313px;
+    width:418px;
+    padding:0 16px 16px;
+    z-index:1;
+}
+
+.categorie {
+    display: block;
+    font-size:2rem;
+    font-weight:lighter;
+    padding-bottom: 5px;
+}
+
+.titre_principal {
+    font-family:"Avenir";
+    font-size:2.4rem;
+    text-transform:uppercase;
+    font-weight:900;
+}
+
+.text_desc {
+    font-size:1.4rem;
+    margin-bottom:52px;
+    font-weight:400;
+}
+
+button.explore {
+    padding:16px;
+    border:0;
+    background-color:#efdf00;
+    font-size:1.6rem;
+    font-weight:900;
+    font-family:inherit;
+    color:#000;
+    transition:background-color 0.5s ease, color 0.5s ease;
+}
+button.explore:hover {
+    background-color:transparent;
+    color:white;
+    background-color:black;
+    cursor:pointer;
+}
+button.explore:focus {outline:none}
+.pictures {
+    margin:0px;
+    padding:0px;
+    display:flex;
+    height:850px;
+    width:100%;
+}
+.pictures li {list-style-type:none;position:absolute}
+.pr1, .pr1 img {width:300px;height:226px}
+.pr2, .pr2 img {height:280px;width:380px}
+.pr3, .pr3 img {width:240px;height:180px}
+.pr4, .pr4 img {width:320px;height:240px}
+.pr5, .pr5 img {width:400px;height:300px}
+.pr6, .pr6 img {width:320px;height:240px}
+
+li.pr1 {left:300px}
+li.pr2 {left:220px;top:240px} 
+li.pr3 {left:610px;top:340px}
+li.pr4 {left:860px;top:340px}
+li.pr5 {left:450px;top:530px}
+li.pr6 {left:860px;top:590px}
+
+.reveal-loaded .reveal [class*="reveal-"] {
+    opacity: 0!important;
+    animation: none!important;
+    transition: 0s!important;
+}
+.reveal-loaded [class*="reveal-"]{
+    animation: revealAnimation 1s cubic-bezier(.5, 0, 0, 1) both;
+    z-index:0;
+}
+.reveal-loaded .reveal-2 {
+    animation-delay: .1s;
+}
+.reveal-loaded .reveal-3 {
+    animation-delay: .2s;
+}
+.reveal-loaded .reveal-4 {
+    animation-delay: .3s;
+}
+.reveal-loaded .reveal-5 {
+    animation-delay: .4s;
+}
+.reveal-loaded .reveal-6 {
+    animation-delay: .5s;
+}
+
+@keyframes revealAnimation {
+    0% {
+        opacity:0;
+        transform:translateY(50px)
+    }
+    100% {
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+
+.vieabord1 {
+    width:100%;
+    height:188px;
+    padding:32px 0px;
+    display:flex;
+    justify-content:center;
+}
+.vab_content {width:1280px;margin:8px 0px}
+.vab_content .categorie,.hybrides1 .categorie,.rsline1 .categorie {
+    margin:0 0 8px;
+    font-size:1.6rem;
+    text-align:center
+}
+.vab_content .titre,.hybrides1 .titre,.rsline1 .titre {
+    padding:0 0 16px;
+    margin:0;
+    font-family:"Avenir";
+    font-weight:800;
+    font-size:2.4rem;
+    text-align:center;
+    text-transform:uppercase;
+}
+.vab_content .desc,.hybrides1 .desc,.rsline1 .desc {
+    padding: 0px 256px;
+    margin:0px;
+    font-size:1.8rem;
+    text-align:center;
+    font-weight:400;
+}
+
+.vieabord2 {
+    width:100%;
+    padding:32px 0;
+    display:flex;
+    justify-content:center;
+}
+.vab_content2 {width:1280px; display:flex}
+div.easy_link {width:405.33px}
+div.easy_link img, div.multi_sense img, div.easy_drive img {height:227.984px}
+div.elcontent {width:405.33px;padding:0;margin:0;}
+div.vab_content2 p {
+    color:#000;
+    font-size: 1.6rem;
+    font-weight:600;
+    padding-bottom:16px;
+}
+div.vab_content2 p::after {
+    display:block;
+    content:"";
+    width:50px;
+    height:0px;
+    border-bottom: 1px solid #000;
+    position:absolute;
+    top:2535px;
+}
+div.multi_sense, div.easy_drive {padding-left:32px}
+div.vab_content2 div.body {font-size:1.4rem}
+
+div.vieabord3 {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:32px 0;
+}
+a.vab3v1 button{
+    background-color:black;
+    color:white;
+    padding:13px 15px;
+    border:0;
+    font-size:1.6rem;
+    font-family:"Avenir";
+    font-weight:700;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+a.vab3v1 button:hover{
+    background-color:#efdf00;
+    color:black;
+}
+a.vab3v2 button{
+    background-color:transparent;
+    padding:12px 14px;
+    font-size:1.6rem;
+    font-weight:700;
+    font-family:"Avenir";
+    border: solid 1px black;
+    margin-left:16px;
+    transition:background-color 0.5s ease, color 0.5s ease;
+}
+a.vab3v2 button:hover{
+    background-color:black;
+    color:white;
+}
+
+.hybrides,.version {margin-top:32px;width:100%}
+.hybrides2,.rsline2 {
+    display:flex;
+    margin:0px 88px;
+    padding:32px 0;
+}
+.contenth2img, .contenth2img img, .contentrs2img, .contentrs2img img {
+    width:632px;
+    height:355px;
+}
+.contenth2txt,.contentrs2txt {padding:0 32px}
+.title_content2 {
+    font-size:2rem;
+    font-weight:700;
+    padding: 10px 0 16px;
+}
+.subtitle_content2 {
+    font-size:1.8rem;
+    padding:0 0 16px;
+}
+.outline_content2{
+    font-size:1.4rem;
+}
+.button {
+    display:flex;
+    justify-content:center;
+    padding:25px 0 0;
+}
+.button a{
+    padding:12px 20px;
+    font-size:1.6rem;
+    font-weight:700;
+    background-color:black;
+    color:white;
+    border:0;
+    font-family:"Avenir";
+    cursor:pointer;
+    transition:color 0.5s ease, background-color 0.5s ease;
+}
+.button a:hover {
+    color:black;
+    background-color:#efdf00;
+}
+.subtitle_contentrs2avis {
+    font-size:1.8rem;
+    padding:16px 0 5px;
+}
